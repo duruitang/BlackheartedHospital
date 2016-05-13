@@ -32,26 +32,32 @@ Open Power小组会以这三个入选条件作为指导原则，明确更详细�
 # 开发者指南
 
 1. 开发者如果需要使用本 repo 的数据，可以通过 [`resource/API_resource/`](resource/API_resource) 中的 yaml 和 json 文件来获取数据
-  * 如果发现数据不同步，可以 fork 之后用 `python update.py` 来更新 yaml 和 json 文件，并提交 pull request
-  * 如果发现 `update.py` 运行过程中有 Warning，或者 json 和 yaml 中有错误，可以通过 `python update.py debug` 来 debug 所有的输出结果。
-    程序运行的 log 会写在根目录中的 `debug.log` 中。`debug.log` 不会被 commit。
+   * 如果发现数据不同步，可以 fork 之后用 `python update.py` 来更新 yaml 和 json 文件，并提交 pull request
+   * 如果发现 `update.py` 运行过程中有 Warning，或者 json 和 yaml 中有错误，可以通过 `python update.py debug` 来 debug 所有的输出结果。
+     程序运行的 log 会写在根目录中的 `debug.log` 中。`debug.log` 不会被 commit。
 2. 本项目所有代码遵守 [GPL V3.0 协议](https://opensource.org/licenses/GPL-3.0)
 3. 所有基于本项目的其他项目，包括使用源码，和使用 api 的项目必须开源。[原因请看此处](https://github.com/open-power-workgroup/Hospital/issues/224)
 
 # 特别申明
 1. 本项目不会有任何商业目的。如果出现不当的情况，请大家及时指出，并随时监督。
-1. 本项目收录的信息均来自互联网，仅为资源共享、学习参考之目的。作者对信息的可用性、准确性或可靠性不作任何承诺与保证。
-1. 如果您对本项目提供的信息有任何异议，请第一时间在Issues里面提出。如情况属实的，我们会第一时间予以删除，并同时向您表示歉意。
-1. 本项目收录的“用户反馈”，同样来自于互联网，也可能存在不实的问题。如果您对这些用户反馈有疑问或异议，也请及时直接通过Issues提交。
-1. 本项目最初的维护者@langhua9527，由于个人原因已经退出本项目的维护。目前本项目由Open Power团队负责管理，管理员是@fakeforreg和@xokctah
+2. 本项目收录的信息均来自互联网，仅为资源共享、学习参考之目的。作者对信息的可用性、准确性或可靠性不作任何承诺与保证。
+3. 如果您对本项目提供的信息有任何异议，请第一时间在Issues里面提出。如情况属实的，我们会第一时间予以删除，并同时向您表示歉意。
+4. 本项目收录的“用户反馈”，同样来自于互联网，也可能存在不实的问题。如果您对这些用户反馈有疑问或异议，也请及时直接通过Issues提交。
+5. 本项目最初的维护者@langhua9527，由于个人原因已经退出本项目的维护。目前本项目由Open Power团队负责管理，管理员是@fakeforreg和@xokctah
 
 # 关联项目
-1. 基于凤凰网数据的[医院地图](https://github.com/wandergis/hospital-viz) 
-1. [饥猪阅读（Piggy Reader）](https://github.com/huntbao/piggyreader)采用本项目数据在用户浏览时加以提示
-2. [用于Firefox的浏览器脚本](https://github.com/open-power-workgroup/Hospital/issues/213)，在Firefox中对用户加以提示
-1. 一个[有情怀的医院查询插件](https://github.com/fushenghua/GetHosp/)
-1. 基于凤凰网莆田医院数据做的[Android原生应用](https://github.com/neuyu/BlackHospital),可以定位到用户所在城市
-1. 其他四个浏览器插件[@erichuang199](https://github.com/erichuang1994/PTXNotification)和[@zhangjh](https://github.com/zhangjh/chromeExt)和[@hustcc](https://github.com/hustcc/PTHospital.chrome)和[@Pearyman](https://github.com/open-power-workgroup/Hospital/issues/195)
+| 名称                                       | 描述                                | Stars | Forks |
+| ---------------------------------------- | --------------------------------- | ----- | ----- |
+| [hospital-viz](https://github.com/wandergis/hospital-viz) | 基于凤凰网数据的医院地图                      | [![GitHub stars](https://img.shields.io/github/stars/wandergis/hospital-viz.svg?style=social&label=Star&maxAge=10800)](https://github.com/wandergis/hospital-viz)| [![GitHub forks](https://img.shields.io/github/forks/wandergis/hospital-viz.svg?style=social&label=Fork&maxAge=10800)](https://github.com/wandergis/hospital-viz)|
+| [PTHospital.chrome](https://github.com/hustcc/PTHospital.chrome) | Chrome浏览器插件                       | [![GitHub stars](https://img.shields.io/github/stars/hustcc/PTHospital.chrome.svg?style=social&label=Star&maxAge=10800)](https://github.com/hustcc/PTHospital.chrome)| [![GitHub forks](https://img.shields.io/github/forks/hustcc/PTHospital.chrome.svg?style=social&label=Fork&maxAge=10800)](https://github.com/hustcc/PTHospital.chrome)|
+| [GetHosp](https://github.com/fushenghua/GetHosp)   | 一个有情怀的医院查询插件                      | [![GitHub stars](https://img.shields.io/github/stars/fushenghua/GetHosp.svg?style=social&label=Star&maxAge=10800)](https://github.com/fushenghua/GetHosp)| [![GitHub forks](https://img.shields.io/github/forks/fushenghua/GetHosp.svg?style=social&label=Fork&maxAge=10800)](https://github.com/fushenghua/GetHosp)|
+| [Putian_Warning](https://github.com/FirefoxBar/userscript/tree/master/Putian_Warning) | Putian Warning基于GreaseMonkey的扩展脚本 | [![GitHub stars](https://img.shields.io/github/stars/FirefoxBar/userscript.svg?style=social&label=Star&maxAge=10800)](https://github.com/FirefoxBar/userscript/tree/master/Putian_Warning)| [![GitHub forks](https://img.shields.io/github/forks/FirefoxBar/userscript.svg?style=social&label=Fork&maxAge=10800)](https://github.com/FirefoxBar/userscript/tree/master/Putian_Warning)|
+| [莆田系黑心医院名单插件](https://chrome.google.com/webstore/detail/%E8%8E%86%E7%94%B0%E7%B3%BB%E9%BB%91%E5%BF%83%E5%8C%BB%E9%99%A2%E5%90%8D%E5%8D%95%E6%8F%92%E4%BB%B6/ieogbmijfpmdlkdifblkcgomfmonmfbc?hl=zh-CN) | 一个Chrome插件，位于谷歌应用商店               | [![GitHub stars](https://img.shields.io/github/stars/Pearyman/fu-kBlackHeartedHospital.svg?style=social&label=Star&maxAge=10800)](https://github.com/Pearyman/fu-kBlackHeartedHospital)| [![GitHub forks](https://img.shields.io/github/forks/Pearyman/fu-kBlackHeartedHospital.svg?style=social&label=Fork&maxAge=10800)](https://github.com/Pearyman/fu-kBlackHeartedHospital)|
+| [piggyreader](https://github.com/huntbao/piggyreader)   | 饥猪阅读（Piggy Reader），在用户浏览时加以提示     | [![GitHub stars](https://img.shields.io/github/stars/huntbao/piggyreader.svg?style=social&label=Star&maxAge=10800)](https://github.com/huntbao/piggyreader)| [![GitHub forks](https://img.shields.io/github/forks/huntbao/piggyreader.svg?style=social&label=Fork&maxAge=10800)](https://github.com/huntbao/piggyreader)|
+| [chromeExt](https://github.com/zhangjh/chromeExt)     | 一个Chrome插件                        | [![GitHub stars](https://img.shields.io/github/stars/zhangjh/chromeExt.svg?style=social&label=Star&maxAge=10800)](https://github.com/zhangjh/chromeExt)| [![GitHub forks](https://img.shields.io/github/forks/zhangjh/chromeExt.svg?style=social&label=Fork&maxAge=10800)](https://github.com/zhangjh/chromeExt)|
+| [野鸡医院](https://github.com/chai2010/ptyy)   | iOS原生应用（Go语言+Ruby语言实现），大陆常见野鸡医院查询           | [![GitHub stars](https://img.shields.io/github/stars/chai2010/ptyy.svg?style=social&label=Star&maxAge=10800)](https://github.com/chai2010/ptyy)| [![GitHub forks](https://img.shields.io/github/forks/chai2010/ptyy.svg?style=social&label=Fork&maxAge=10800)](https://github.com/chai2010/ptyy)|
+| [BlackHospital](https://github.com/neuyu/BlackHospital)   | Android原生应用，可以定位到用户所在城市           | [![GitHub stars](https://img.shields.io/github/stars/neuyu/BlackHospital.svg?style=social&label=Star&maxAge=10800)](https://github.com/neuyu/BlackHospital)| [![GitHub forks](https://img.shields.io/github/forks/neuyu/BlackHospital.svg?style=social&label=Fork&maxAge=10800)](https://github.com/neuyu/BlackHospital)|
+| [PTXNotification](https://github.com/erichuang1994/PTXNotification) | 一个Chrome插件                        | [![GitHub stars](https://img.shields.io/github/stars/erichuang1994/PTXNotification.svg?style=social&label=Star&maxAge=10800)](https://github.com/erichuang1994/PTXNotification)| [![GitHub forks](https://img.shields.io/github/forks/erichuang1994/PTXNotification.svg?style=social&label=Fork&maxAge=10800)](https://github.com/erichuang1994/PTXNotification)|
 
 
 # 版本1.2beta
@@ -214,10 +220,14 @@ Open Power小组会以这三个入选条件作为指导原则，明确更详细�
 [](hospital list begin //PLEASE DO NOT DELETE THIS LINE)
 ## 上海
 
-- 上海市闵行区中医院
+- 上海市闵行区中医医院（原上海莱茵医院）
  - 电话 021-51876888
  - 网址 http://www.tcmmh.com
  - 地址 上海市闵行区合川路3071号
+ - 证据:
+     - 该院[页面](http://www.tcmmh.com/entry/149)信息显示：上海市闵行区卫生局、上海中医药大学附属龙华医院、西红柿投资控股有限公司合作共建闵行区中医医院，其中上海西红柿投资控股集团董事、执行总裁为林一平
+     - [ 全国企业信用信息系统](https://m.imgur.com/ADiokDn)显示： 上海西红柿投资控股有限公司的法定代表人是陈金秀，自然人股东包括：李爱兰和陈金秀。
+     -  [谷歌缓存页面](https://webcache.googleusercontent.com/search?q=cache:D5otmZNe-wMJ:www.ptshsh.com/index.php%3Fm%3Dcms%26q%3Dview%26id%3D33+&cd=1&hl=en&ct=clnk&lr=lang_en%7Clang_zh-CN%7Clang_zh-TW)显示（这是谷歌对[上海市莆田商会](http://www.ptshsh.com/)网页的缓存），陈金秀是上海市莆田商会名誉会长，籍贯：秀屿区东庄镇
 - 上海华美医疗美容医院
  - 电话 021-58856655
  - 电话 400-8806580
@@ -264,22 +274,24 @@ Open Power小组会以这三个入选条件作为指导原则，明确更详细�
  - 电话 021 -64080808
  - 网址 http://www.tida.sh.cn
  - 网址 http://www.tida120.com
-- 上海五官科医院(注:这个隶属深圳博爱医疗集团，非汾阳路的复旦大学附属眼耳鼻喉科医院/上海市五官科医院)
+ - 上海五官科医院(注:这个隶属深圳博爱医疗集团，非汾阳路的复旦大学附属眼耳鼻喉科医院/上海市五官科医院) （复旦大学附属眼耳鼻喉科医院/上海市五官科医院是卫计委直属公立三甲医院，此条目仅一字之差，容易混淆。目前百度搜索上海五官科医院也是导向到复旦大学附属眼耳鼻喉科医院/上海市五官科医院）院方申明 www.fdeent.org/content/4408
+ - 网址 http://www.er021.com
+ - 相关资料 百度搜索关键词"上海五官科医院 上海沪申五官科医院",可以直接看到搜索结果把两者混淆
 - 上海博爱医院（是否属于莆田系存在争议，请继续求证）
   - 电话 021-64333999
   - 电话 021-6431 2600
   - 网址 http://boaihospital.com/
   - 地址 上海市淮海中路1590号
-  - 证据 
-	- [这个网页](http://www.gotoread.com/s/e/?vo=3803&p=43)是《瞭望东方周刊》2007年第4期(电子杂志)的报道《“莆田系”败走上海博爱医院》，报道记者为李蔚和朱国栋，文章提到，上海博爱医院是上海第一家民营医院，2004年莆田系曾入股上海博爱医院，当时莆田人的股份是中骏20%，美迪亚20%，澳信20%，这三家医疗投资集团的掌门人分别为莆田游医大佬詹玉鹏、詹国团和林宗金。2006年3月，上海市卫生局会同市工商局，药监、物价等部门对全市医疗机构的专项检查中，上海博爱医院成为问题最多的医院。违规项目包括“使用‘毁灭癌症细胞、提高存活率’等明显违规用于；门口则擅自挂有‘瑞士羊胚胎素注射亚洲服务中心’等招牌；擅自实行医保、自费病人收费‘双轨制’，部分收费项目自费病人要高出医保病人达三四倍，且未明码标价。”王家屏告诉《瞭望东方周刊》记者，“不久之后，博爱医院就被取消了医保资格，过了一段时间莆田系多数股份黯然推出博爱医院。”
-	- 该医院网站主页右边红色标志“博爱公告”声明自己不是莆田系医院。
-	- [2015年健康权纠纷案](http://www.pkulaw.cn/case/pfnl_1970324843195518.html?match=Exact)
-	- [工信部信息备案查询参考](https://imgur.com/88cf0QJ)
-	- 帖子“[绝对原创：看看上海博爱医院的黑幕！](http://bbs.voc.com.cn/topic-3222095-1-1.html)”，该帖子认为医院鲸吞离休干部医疗费，乱收费，乱宰病人尤其是离休干部。并声明"保证所提供的情况是真实的，供市领导调研，决策，既要保证离休干部的医疗要求又要杜绝医疗资金的浪费与被侵吞，制订有效的管理规章。"
+  - 证据:
+	  - [这个网页](http://www.gotoread.com/s/e/?vo=3803&p=43)是《瞭望东方周刊》2007年第4期(电子杂志)的报道《“莆田系”败走上海博爱医院》，报道记者为李蔚和朱国栋，文章提到，上海博爱医院是上海第一家民营医院，2004年莆田系曾入股上海博爱医院，当时莆田人的股份是中骏20%，美迪亚20%，澳信20%，这三家医疗投资集团的掌门人分别为莆田游医大佬詹玉鹏、詹国团和林宗金。2006年3月，上海市卫生局会同市工商局，药监、物价等部门对全市医疗机构的专项检查中，上海博爱医院成为问题最多的医院。违规项目包括“使用‘毁灭癌症细胞、提高存活率’等明显违规用于；门口则擅自挂有‘瑞士羊胚胎素注射亚洲服务中心’等招牌；擅自实行医保、自费病人收费‘双轨制’，部分收费项目自费病人要高出医保病人达三四倍，且未明码标价。”王家屏告诉《瞭望东方周刊》记者，“不久之后，博爱医院就被取消了医保资格，过了一段时间莆田系多数股份黯然推出博爱医院。”
+	 - 该医院网站主页右边红色标志“博爱公告”声明自己不是莆田系医院。
+  	 - [2015年健康权纠纷案](http://www.pkulaw.cn/case/pfnl_1970324843195518.html?match=Exact)
+  	 - [工信部信息备案查询参考](https://imgur.com/88cf0QJ)
+  	 - 帖子“[绝对原创：看看上海博爱医院的黑幕！](http://bbs.voc.com.cn/topic-3222095-1-1.html)”，该帖子认为医院鲸吞离休干部医疗费，乱收费，乱宰病人尤其是离休干部。并声明"保证所提供的情况是真实的，供市领导调研，决策，既要保证离休干部的医疗要求又要杜绝医疗资金的浪费与被侵吞，制订有效的管理规章。"
 - 上海新虹桥医院(号称上海男科医院)
  - 电话 021-62092255
  - 网址 http://www.xinhongqiao.cn/
- - 地址 上海长宁区虹古路85号(虹桥开发区西侧) 
+ - 地址 上海长宁区虹古路85号(虹桥开发区西侧)
 - 上海虹桥医院（所属[上海闵行虹桥医院有限公司](http://weibo.com/shhqyy02164659999)）
  - 电话 021-64659999
  - 网址 http://www.shhqyy.com
@@ -296,7 +308,7 @@ Open Power小组会以这三个入选条件作为指导原则，明确更详细�
  - 地址 上海市普陀区曹安路1352号
 - 上海西郊骨科医院
  - 电话 021-52208866
- - 电话 136-5172-4016 
+ - 电话 136-5172-4016
  - 网址 http://www.sdaj.net/
  - 网址 http://www.gb5u.com/
  - 网址 http://www.gkyy120.com/
@@ -320,16 +332,16 @@ Open Power小组会以这三个入选条件作为指导原则，明确更详细�
  - 网址 http://www.rzjfk.com/
  - 网址 http://yyk.qqyy.com/h14964/
  - 地址 上海市浦东新区浦东南路2250号（南浦大桥下）
- - 相关资料
-	 - 这是百度和谷歌发现网址最多的医院
-	 - 最后一个网址http://yyk.qqyy.com/h14964/ 所属全球医院网http://www.qqyy.com/ 工信部备案信息为闽ICP备09014062号, 2014-11-06, 福州网健天下网络科技有限公司, 
-	 - 谷歌搜索关键词： 医院 site:*.qqyy.com 可以发现很多在这个名单上出现的医院，可以为进一步搜索参考。
-	 - 天涯帖子 [上海南浦妇科医院的受害者 该怎么维权？](http://bbs.tianya.cn/post-828-784859-1.shtml) 
-	 - 网址http://www.pmref.com/ 将自己称为上海松江区妇科医院，而电话仍然是021-58891199，并且在这个网页http://www.pmref.com/yyjs/51.html 显示为南浦妇科医院
+ - 相关资料:
+     - 这是百度和谷歌发现网址最多的医院
+     - 最后一个网址http://yyk.qqyy.com/h14964/ 所属全球医院网http://www.qqyy.com/ [工信部备案信息](https://m.imgur.com/VqVuGnj)为闽ICP备09014062号, 2014-11-06, 福州网健天下网络科技有限公司,
+     - 谷歌搜索关键词： 医院 site:*.qqyy.com 可以发现很多在这个名单上出现的医院，可以为进一步搜索参考。
+     - 天涯帖子 [上海南浦妇科医院的受害者 该怎么维权？](http://bbs.tianya.cn/post-828-784859-1.shtml)
+     - 网址http://www.pmref.com/ 将自己称为上海松江区妇科医院，而电话仍然是021-58891199，并且在这个网页http://www.pmref.com/yyjs/51.html 显示为南浦妇科医院
 - 上海健桥医院
  - 电话 021-56659999
  - 网址 http://www.jqbyby.com
-- 上海长江医院
+ - 上海长江医院
  - 电话 021-65022556
  - 网址 http://www.cjhospital.com
 - 解放军411医院
@@ -345,20 +357,20 @@ Open Power小组会以这三个入选条件作为指导原则，明确更详细�
 - 上海安平医院
 - 江东泌尿外科医院
 - 上海九州泌尿医院
-- 上海青城医院
-- 上海博大医院
-- 上海中亚医院
-- 上海时光整形外科医院
-- 上海市黄浦区中西医结合医院
-- 上海曙康口腔医院
-- 上海市浦东新区传染病医院
-- 上海中医药大学附属曙光医院(这个医院的整形科是莆田系的。时光整形被承包。本体不是莆田系的)
-- 浦东肝病专科医院
-- 众仁曙光医疗保健中心
-- 上海市松江区方塔中医医院
-- 上海嘉华医院
-- 上海中骏医学科学研究所
-- 上海天伦医院(注:隶属上海明爱医疗集团)
+- 上海青城医院 [done]
+- 上海博大医院 [done]
+- 上海中亚医院 [done]
+- 上海时光整形外科医院 [done]
+- 上海市黄浦区中西医结合医院 [done]
+- 上海曙康口腔医院 [done]
+- 上海市浦东新区传染病医院 [done]
+- 上海中医药大学附属曙光医院(这个医院的整形科是莆田系的。时光整形被承包。本体不是莆田系的) [done]
+- 浦东肝病专科医院 [done]
+- 众仁曙光医疗保健中心 [done]
+- 上海市松江区方塔中医医院 [done]
+- 上海嘉华医院 [done]
+- 上海中骏医学科学研究所 [done]
+- 上海天伦医院(注:隶属上海明爱医疗集团) [done]
  - 电话 021-65667633
  - 电话 021-65259999
  - 电话 +9864006660102
@@ -369,20 +381,36 @@ Open Power小组会以这三个入选条件作为指导原则，明确更详细�
  - 网址 http://www.shtianlun.org/
  - 网址 http://www.tianlun100.com/
  - 地址 上海市虹口区凉城路545号
-- 上海国正医院(注:隶属上海明爱医疗集团)
+- 上海国正医院(注:隶属上海明爱医疗集团) [没有找到]
  - 电话 021-58009999
  - 电话 18801856118
  - 网址 http://23759.zhaopin.job120.com/
  - 网址 http://shgzyy.cn.b2b168.com/
  - 地址 上海市南汇区惠南镇人民西路99号
+- 上海美莱医疗美容医院 (所属为：美莱医疗美容(连锁)医院集团 http://www.mylike.com/)
+ - 电话 021-2223 5555
+ - 网址 http://www.shmylike.com/
+ - 地址 上海长宁区延安西路789号美莱大厦曹家堰路88号 
+- 上海东方丽人医疗美容医院
+ - 电话 400-630-6997
+ - 电话 1379444015
+ - 网址 http://www.4006306997.com/index.html
+ - 地址 上海市长宁区安龙路835号
+ - 相关资料:
+     -  工信部备案信息： 闽ICP备15019526号，主办单位性质：个人；主办单位名称/网站负责人：胡森森； 网站名称：麦凯乐网(和网站显示名称严重不符) 
 
 ## 北京
 
 - 武警北京总队医院
+ - 地址 北京市朝阳区东三里屯一号院  
  - [新闻报道](http://news.ifeng.com/a/20160501/48651671_0.shtml): 在1月“血友病贴吧事件”中，当时媒体对部分已售出的疾病贴吧进行调查，其中承包甲亢吧的是所谓“武警北京总队医院中医甲状腺科”。
 - 武警北京市总队第二医院
+ - 地址 北京市西城区月坛北街丁3号 
  - [新闻报道](http://news.ifeng.com/a/20160501/48651671_0.shtml): 在朋友圈热门文章《一个死在百度和部队医院之手的年轻人》中，作者通过检索自称“武警北京总队二院官网”的域名注册信息，发现魏则西曾经就医的武警北京总队二院肿瘤生物中心，其背景是莆田系。
-- 北京华美美莱整形医院
+- 北京美莱医疗美容医院(所属为：北京美莱医疗美容医院有限公司-> 美莱医疗美容(连锁)医院集团 http://www.mylike.com/)
+ - 电话 010-56935111
+ - 网址 http://www.bjmylike.com/ 
+ - 地址 北京市朝阳区朝阳门外大街227号 
 - 北京俪人女子医院
 - 北京北海医院
 - 北京前海股骨头医院
@@ -596,11 +624,11 @@ Open Power小组会以这三个入选条件作为指导原则，明确更详细�
  - 网站：http://yyk.99.com.cn/baoan/105761/jianjie.html
  - 电话：4008669999
  - 证据：
-     1. https://www.google.com/#q=%E6%9E%97%E5%9B%BD%E9%87%91+%E5%8C%BB%E9%99%A2&btnK=Google+%E6%90%9C%E7%B4%A2
-     2. http://imgur.com/UzfXaWV
-     3. http://imgur.com/PdDIwHo
-     4. http://imgur.com/5PiBr6e
-     5. http://imgur.com/LcXYUo0
+	 - https://www.google.com/#q=%E6%9E%97%E5%9B%BD%E9%87%91+%E5%8C%BB%E9%99%A2&btnK=Google+%E6%90%9C%E7%B4%A2
+	 - http://imgur.com/UzfXaWV
+	 - http://imgur.com/PdDIwHo
+	 - http://imgur.com/5PiBr6e
+	 - http://imgur.com/LcXYUo0
 
 ## 昆明
 
@@ -750,6 +778,11 @@ Open Power小组会以这三个入选条件作为指导原则，明确更详细�
 - 四川生殖健康中心专科医院
 - 武警四川省消防总队医院(妇科/泌尿科)
 - 四川中医药高等专科学校附属医院
+- 成都美莱医学美容医院
+ - 电话  028-6826 8888 
+ - 网址 http://www.scmylike.com/
+ - 地址 成都市青华路31号（杜甫草堂北大门旁）
+ - 证据 参见文末“美莱医疗美容（连锁）医院集团”条目！
 
 ## 雅安
 
@@ -783,6 +816,10 @@ Open Power小组会以这三个入选条件作为指导原则，明确更详细�
 ## 福州
 
 - 福州华美美莱整形医院
+ - 电话 0591-22966666
+ - 网址 http://www.fzhmzx.com/
+ - 地址 福州市晋安区塔头路177号
+ - 证据  参见文末“美莱医疗美容（连锁）医院集团”条目！
 - 福州鼓楼医院
 - 福州现代妇产医院
 - 福州左海医院
@@ -850,6 +887,11 @@ Open Power小组会以这三个入选条件作为指导原则，明确更详细�
 - 杭州同济医院
  - 网址 http://www.0571tongji.com
  - 网址 http://www.hztjh.com
+- 杭州美莱医疗美容医院
+ - 电话 400-0085-188
+ - 网址 http://www.hzmylike.com/
+ - 地址 杭州市西湖区莫干山路333号
+ - 证据 参见文末“美莱医疗美容（连锁）医院集团”条目！
 
 ## 湖州
 
@@ -1070,58 +1112,79 @@ Open Power小组会以这三个入选条件作为指导原则，明确更详细�
 ## 南京
 
 - 江苏施尔美整形美容医院
+  - 地址：南京市秦淮区太平南路389号101、201、301室
 - 南京曙光医院
+  - 地址：南京市中华门外正学路1号
 - 南京江宁博爱医院
+  - 地址：南京市江宁区东山镇同夏路19号
 - 南京市江宁区众彩门诊部
 - 南京世纪现代妇产医院
+  - 地址：南京市江宁区天元东路358号
 - 南京建国男科医院
+  - 地址：南京市长乐路238号
 - 南京康豪妇科
 - 南京阳光肿瘤医院
 - 南京港龙医院
+  - 地址：南京市秦淮区苜蓿园大街48号
 - 454医院植发科
 - 南京医科二附院协作医院
 - 天长现代妇产医院
 - 南京医科大学附属友谊整形外科医院
+  - 地址：南京市汉中路146号
 - 南京解放军81医院
 - 南京454医院妇产科
 - 南京蓝十字脑科医院
 - 南京迈皋桥医院
 - 南京东院门诊部
 - 南京华美整形美容医院
+  - 地址：南京珠江路655号
 - 南京空军机关医院神经科
 - 南京军区机关医院妇科
 - 南京长江医院
+  - 地址：南京市鼓楼区钟阜路新门口18号
 - 南京长海医院
+  - 地址：南京市浦口区宁六路38号
 - 南京美迪亚医院
 - 南京亚韩整形美容医院
+  - 地址：南京市江宁区金箔路女人街国际影城旁
 - 南京仁品耳鼻喉专科医院
+  - 地址：南京市中华路528号
 - 南京邦德骨科医院
-- 南京肛泰中医院
-- 南京维多利亚美容诊所
+  - 地址：南京市玄武区龙蟠中路97号
+- 南京肛泰中医医院
+  - 地址：建邺区黄山路2号
+  - 网址：http://www.njgtyy.com/
+- 南京维多利亚国际整形美容医院
+  - 地址：南京市秦淮区虎踞南路100号1、2层
 - 南京华世佳宝妇产医院
+  - 地址：南京市建邺区文体西路9号
 - 南京中天皮肤病医院
 - 南京恒大中医院
 - 南京新协和医院
 - 南京天伦医院
 - 南京玛丽妇产医院
+  - 地址：南京市雨花台区雨花东路2号
 - 南京华西妇科医院
 - 南京新城医院
 - 南京建国医院
+  - 地址：南京市长乐路238号
 - 南京雨花男科医院
 - 南京科大医院
 - 南京和燕医院
 - 半山医院妇科
 - 南京高淳博爱医院
+  - 地址：高淳区镇兴路73号
 - 溧水瑞丽妇产医院
 - 南京华夏妇科
 - 南京仁济妇科
 - 南京广济医院
 - 南京江宁友爱医院
 - 南京连天美美容医院
+  - 地址：南京市鼓楼区新模范马路46-1
 - 南京韩辰整形
 - 南京康美美容医疗医院
+  - 地址：南京市秦淮区洪武路288号
 - 南京奇致医疗美容医院
-- 南京维多利亚整形医院
 - 南京华肤医院
 - 南京华夏白癜风医院
 - 南京现代长城医院
@@ -1131,9 +1194,10 @@ Open Power小组会以这三个入选条件作为指导原则，明确更详细�
 - 南京金伯利口腔
 - 南京数字口腔医院
 - 南京雅度齿科
-- 南京曙光肛肠医院
-- 南京肛泰医院
+- 南京曙光肛肠专业医院
+  - 地址：南京市中华门外正学路1号
 - 南京仁品耳鼻喉科医院
+  - 地址：南京市中华路528号
 - 南京正大耳鼻喉科医院
 - 南京鼓楼新生门诊
 - 南京华都医学研究院
@@ -1204,7 +1268,7 @@ Open Power小组会以这三个入选条件作为指导原则，明确更详细�
 
 - 武汉现代妇产医院
  - 电话 027-68836686
-- 武汉当代佳丽医院
+ - 武汉当代佳丽医院
  - 电话 027-87563555
 - 武汉阳光女子医院
 - 广州军区武汉总医院南湖妇产中心
@@ -1764,6 +1828,18 @@ Open Power小组会以这三个入选条件作为指导原则，明确更详细�
 
 - 泸州东大肛肠医院
 
+## 马鞍山
+
+- 马鞍山康豪泌尿专科医院
+  - 网址 www.kh91.com
+  - 电话 0555-2402821
+- 马鞍山红十字医院
+  - 网址 www.hszyy.cn
+  - 电话 0555—2345519
+- 马鞍山金陵医院
+  - 网址 www.120mas.com
+  - 电话 0555-2161555
+
 ## 南宁
 
 ### 陈氏家族
@@ -1809,6 +1885,36 @@ Open Power小组会以这三个入选条件作为指导原则，明确更详细�
 - 中华整形网
 - 中华不育网
 - 广州人流网
-- 中华肿瘤网
+- 中国肿瘤网 （未完待续）
+ - 网址 http://www.cnzhongliu.com/ 
+- 中华肿瘤康复网(中医肿瘤康复咨询网) （未完待续）
+ - 电话 0371-68717218  
+ - 电话 0371-68715173
+ - 电话 13803893403
+ - 电话 13803893402 
+ - 网址 http://www.songhongen.com.cn/
+ - 地址 郑州市航海中路95号(台胞小区24号) 
+ - 相关资料：  
+	 - 工信部备案信息： 主办单位：个人（并非企业！）；网站负责人：宋洪恩；备案许可号：豫ICP备09017762号-1； 网站名称：健康康复网（和显示名称“中医肿瘤康复咨询网”明显不符，而百度搜索显示为“中华肿瘤康复网”）
+	 - 网站显示“[汇款信息](http://www.songhongen.com.cn/order/index.htm)”：
+		 	- 邮局汇款 安全可靠，一疗程30天，药重15公斤许，药费2250元，特快专递邮费100元，共2350元，适用于晚期患者。汇款时请用正楷填写汇款通知单，然后有邮局办理。我科在收到汇款通知单后，立即将药物、说明书、《协议书》及收据清单一并寄去，若条件许可，您可将汇款收据贴在一张白纸上，写详地址、邮编、电话及汇款人姓名、病情简短说明，如加密码将汇票号码及密码一并写上，通过传真、电话或短信传到我科，我科收到信息后，经查无误，可立即发药。
+		 	- 收款人：宋洪恩 地址：河南省郑州市航海中路95号附24号 邮编：450005  电话：0371—68717218 68715173 短信手机：（0）13803893403
+			- 周艳丽　中国邮政银行河南省郑州政通路支行　卡号：6221 8849 1000 6293 457  周艳丽中国农业银行郑州市二七支行 　卡号：6228 4507 1800 8739 578
+	 - [谷歌搜索宋洪恩显示大量不靠谱消息](https://www.google.com/search?hl=en&q=%E5%AE%8B%E6%B4%AA%E6%81%A9&gws_rd=ssl)
+- 美莱医疗美容（连锁）医院集团
+ - 电话 400-898-0000  
+ - 网址 http://www.mylike.com/ 
+ - 证据：
+	 - 工信部备案信息: 上海美莱投资管理有限公司； 网站负责人：陈国付； 备案号：沪ICP备12022412号-6；   
+	 - [全国企业信息公示系统](https://m.imgur.com/I3rbbxh)显示，上海美莱投资管理有限公司法定代表人陈金秀，自然人股东为陈金秀和詹建昇。
+	 - [谷歌缓存页面](https://webcache.googleusercontent.com/search?q=cache:D5otmZNe-wMJ:www.ptshsh.com/index.php%3Fm%3Dcms%26q%3Dview%26id%3D33+&cd=1&hl=en&ct=clnk&lr=lang_en%7Clang_zh-CN%7Clang_zh-TW)显示（这是谷歌对[上海市莆田商会](http://www.ptshsh.com/)网页的缓存），陈金秀是上海市莆田商会名誉会长，籍贯：秀屿区东庄镇
+	 - 以上证据确认完毕，可按照美莱医疗美容医院集团的官网，确认其下属各地医院属于莆田系，无需继续查证。
+- 中华名医协会 （未完待续）
+ - 电话 15911030069
+ - 电话 香港 852-2915.7428
+ - 网址 http://www.chinesefamousdoctor.org/
+ - 地址： 香港铜锣湾轩尼诗道488号轩尼诗大厦10M（永久地址）
+ - 相关资料:
+ 	 - 工信部备案信息：主办单位名称：北京世华天地网络技术服务有限公司；主办单位性质：企业；网站名称：名医协会；网站负责人姓名：周建；网站备案许可号：京ICP证000045号-23 ；  
 
 [](hospital list end //PLEASE DO NOT DELETE THIS LINE)
